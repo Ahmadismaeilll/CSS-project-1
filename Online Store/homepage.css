@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*header*/ 
+@font-face {
+    font-family: Logo;
+    src: url(elegant1.ttf);
+}
+.header{
+    height: 60px;
+    font-family: Logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    letter-spacing: 4px;
+}
+
+/*Landing/main*/
+.landing{
+    height: 607px;
+    flex-wrap: wrap-reverse;
+}
+.landing img{
+    opacity: 0.5;
+}
+.textlanding{
+    color: black;
+    font-family: Logo;
+    font-size: xx-large;
+}
+.landing .textlanding p{
+    font-weight: 600;
+}
+.landing .btnlanding{
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-top: 10px;
+}
+.landing .btnlanding:hover{
+    width: 250px;
+    height: 75px;
+}
+
+/*brands*/
+.brands{
+    height: 100px;
+    border-bottom: solid;
+    border-width: 2px;
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*products*/
+.products{
+    height: 700px;
+}
+.sections{
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(70%);
+}
+.sections img{
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.sections img:hover{
+    border-radius: 30px;
+    transform: translateY(-30px);
+}
+.sectiontext{
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-230px);
+    font-family: Logo;
+    letter-spacing: 4px;
+}
+
+/*footer*/
+.footer{
+    background-color: black;
+    padding: 70px 0;
+    font-family: Logo;
+    letter-spacing: 3px;
+
+}
+.footer ul{
+    list-style: none;
+}
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: 22%;
+    padding: 0 15px;
+}
+.col h4{
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+.col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.col ul li{
+    margin-bottom: 20px;
+}
+.col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 1000;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.col ul li a:hover{
+    color: white;
+    padding-left: 10px;
+}
+.col .social-links a{
+    display: inline-block;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255 , 255, 255 , 0.2);
+    margin: 0 15px 10px 0;
+    text-align: center;
+    line-height: 62px;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.col .social-links a:hover{
+    color: #24262b;
+    background-color: white;
+}
